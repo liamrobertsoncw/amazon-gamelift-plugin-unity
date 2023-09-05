@@ -8,9 +8,12 @@
     --color-button-hover: #386082;
     
     --font-size-menu: 18px;
+    --font-size-header-primary: 32px;
+    --font-size-header-secondary: 24px;
+    --font-size-paragraph-primary: 16px;
 }
 
-.main {
+.main{
     flex-direction: row;
     height: 100%;
     width: 100%;
@@ -48,9 +51,244 @@
 
 .TabContent {
     display: none;
+    margin-left: 25px;
+    margin-right: 25px;
+
 }
 
 .TabContent--selected {
     display: flex;
 }
+
+.Header1{
+    font-size: var(--font-size-header-primary);
+    color: #D2D2D2;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Header2{
+    color: #D2D2D2;
+    font-family: Inter;
+    font-size: var(--font-size-header-secondary);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Paragraph1{
+    color: #D2D2D2;
+    font-family: Inter;
+    font-size: var(--font-size-paragraph-primary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.InfoBox{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.InfoBox > VisualElement{
+    margin: 6px;
+}
+
+.InfoBox > Image{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.InfoBox > Label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*gap: 10px;*/
+    flex: 1 0 0;
+}
+
+.InfoBox__CloseButton{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.SuccessBox{
+    background-color: rgba(88, 188, 97, 0.13); 
+    border-left-color: rgb(88, 188, 97); 
+    border-right-color: rgb(88, 188, 97); 
+    border-top-color: rgb(88, 188, 97); 
+    border-bottom-color: rgb(88, 188, 97);
+    display: flex;
+}
+
+.WarningBox{
+    background-color: rgba(255, 170, 34, 0.13); 
+    border-left-color: rgb(255, 170, 34); 
+    border-right-color: rgb(255, 170, 34); 
+    border-top-color: rgb(255, 170, 34); 
+    border-bottom-color: rgb(255, 170, 34); 
+    display: flex;
+}
+
+.ErrorBox{
+    background-color: rgba(250, 39, 39, 0.13); 
+    border-left-color: rgb(250, 39, 39); 
+    border-right-color: rgb(250, 39, 39); 
+    border-top-color: rgb(250, 39, 39); 
+    border-bottom-color: rgb(250, 39, 39); 
+}
+
+.SuccessBox__Icon{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=-2236324273849735119&amp;guid=24252f1fdba660243bdd32bd42cee5f7&amp;type=3#arrow-left@2x&apos;);
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.WarningBox__Icon
+{
+    background-color: rgba(0, 0, 0, 0); 
+    background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=-2236324273849735119&amp;guid=24252f1fdba660243bdd32bd42cee5f7&amp;type=3#arrow-left@2x&apos;); 
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.ErrorBox__Icon{
+    background-color: rgba(0, 0, 0, 0); 
+    background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=-2236324273849735119&amp;guid=24252f1fdba660243bdd32bd42cee5f7&amp;type=3#arrow-left@2x&apos;);
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.DescriptionBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.LinkBox{
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.LinkBox > Label{
+    margin: 6px;
+}
+
+.LinkBox__Divider{
+    width: 1px;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link{
+    color: #4C7EFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Link__White{
+    display: flex;
+    align-items: center;
+
+    color: #D2D2D2;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+
+    border-style: solid;
+    border-bottom-width: 1px; 
+    border-bottom-color: #D2D2D2; 
+}
+
+.Link__Blue{
+    color: #4C7EFF;
+    font-family: Inter;
+    font-size: var(--font-size-paragraph-primary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.DescriptionBox__Divider{
+    height: 1px;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.Button__Primary{
+    display: flex;
+    padding: 8.147px 26.072px;
+    justify-content: center;
+    align-items: center;
+    height: 25px; 
+    width: 117px;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #303030;
+    background-color: #2C5D87;
+
+    color: #EEE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Button__Secondary{
+    display: flex;
+    padding: 8.147px 26.072px;
+    justify-content: center;
+    align-items: center;
+    height: 25px; 
+    width: 117px;
+
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #303030;
+    background-color: #585858;
+
+    color: #EEE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+
+
+
 

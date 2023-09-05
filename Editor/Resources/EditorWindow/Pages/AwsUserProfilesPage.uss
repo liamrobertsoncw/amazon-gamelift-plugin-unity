@@ -5,10 +5,12 @@
     --font-size-card: 16px;
     --font-size-card-button: 18px;
     --font-size-sample: 16px;
+
 }
 
 .cards {
     flex-direction: row;
+    display: flex;
 }
 
 .card {
@@ -48,4 +50,417 @@
     font-size: var(--font-size-card-button);
 }
 
+.TabMenu{
+    display: flex;
+}
 
+.DescriptionBox__Text{
+    white-space: normal; 
+    margin-top: 11px; 
+    word-spacing: 1px; 
+}
+
+.cards{
+    height: 62%; 
+    margin-left: 0; 
+    padding-left: 5px; 
+    margin-right: 0; 
+    margin-top: 6px; 
+    margin-bottom: 11px; 
+    padding-top: 0; 
+    padding-bottom: 0; 
+    flex-direction: row; 
+    display: flex;
+}
+
+
+.ErrorBox__S3ConsoleButton
+{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 3px;
+    background-color: #E4E4E4;
+    /*-unity-font: resource(&apos;Font/FontAwesome&apos;);*/
+    /*-unity-font-definition: resource(&apos;Font/FontAwesome SDF&apos;);*/
+
+    color: #090909;
+    text-align: center;
+    /* --unity-font-size (default)/11.5 Reg */
+    font-family: Inter;
+    font-size: 11.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    gap: 24px;
+}
+
+.card{
+    display: flex;
+    width: 424.5px;
+    height: 400px;
+    padding: 24px;
+    flex-direction: center;
+    align-items: center;
+    gap: 18px;
+
+    border: 1.629px;
+    border-style: solid;
+    border-color: #0D0D0D;
+    background-color: #2A2A2A;
+}
+
+.Card__Header{
+    color: #D2D2D2;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: normal; 
+}
+
+.Card__Text{
+    color: #D2D2D2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    white-space: normal; 
+
+}
+
+.NoAccountCard__Icon{
+    background-image: url(&apos;flex&apos;);
+    width: 100px;
+    height: 100px;
+    /*flex-shrink: 0;*/
+}
+
+.NoAccountCard__Button{
+    display: flex;
+    padding: 8.147px 26.072px;
+    justify-content: center;
+    align-items: center;
+    gap: 6.518px;
+
+    color: #EEE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+    /*-unity-font: resource(&apos;Font/Inter-Regular&apos;); 
+    -unity-font-definition: url(&apos;flex&apos;);*/
+}
+
+.NoAccountCard__SubText{
+    color: #D2D2D2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.HaveAccountCard__Icon{
+    background-image: url(&apos;flex&apos;);
+    width: 100px;
+    height: 100px;
+}
+
+.HaveAccountCard__Button{
+    display: flex;
+    padding: 8.147px 26.072px;
+    justify-content: center;
+    align-items: center;
+    gap: 16.295px;
+    border-radius: 4.888px;
+    background-color: #2C5D87;
+    margin-top: 50px;
+    color: #EEE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.HaveAccountCard__SubText{
+    /*align-self: center; 
+    -unity-text-outline-width: 0; 
+    color: rgb(210, 210, 210); 
+    font-size: 8px;*/
+    border-bottom-color: rgb(153, 153, 153); 
+    border-bottom-width: 1px;
+
+    color: #D2D2D2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AddNewProfileBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+
+.AddNewProfileBox__Header{
+    color: #D2D2D2;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AddNewProfileBox__Content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.AddNewProfileBox__Item{
+    display: flex;
+    flex-direction: row;
+    width: 100%
+    align-items: center;
+    gap: 24px;
+}
+
+.AddNewProfileBox__Item__Right
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*padding: 2px 0px;*/
+    align-items: flex-start;
+    /*gap: 12px;*/
+    flex: 1 0 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.AddNewProfileBox__Item__Right > Button{
+    display: flex;
+    /*padding: 4px 8px;*/
+    align-items: center;
+    gap: 12px;
+    height: auto;
+    width: auto;
+}
+
+
+.AddNewProfileBox__Item > Label{
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.AddNewProfileBox__Item__Field{
+    display: flex;
+    /*padding: 4px 8px;*/
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.AddNewProfileBox__Buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.AddNewProfileBox_Buttons__Divider{
+    flex: 1 0 0;
+    height: 20px;
+}
+
+
+.BootstrapProfileBox{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.BootstrapProfileBox__Text{
+    white-space: normal; 
+    margin-top: 11px; 
+    word-spacing: 1px; 
+}
+
+.BootstrapProfileBox__Content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.BootstrapProfileBox__Item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 34px;
+    align-items: center;
+    margin: 0;
+}
+
+.BootstrapProfileBox__Item__Label{
+    width: 240px;
+    flex-shrink: 0;
+    color: #C4C4C4;
+    font-family: Inter;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.BootstrapProfileBox__Item__Right{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*padding: 2px 0px;*/
+    align-items: center;
+    flex: 1 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.BootstrapProfileBox__Item__Field{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*padding: 4px 12px;*/
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.BootstrapProfileBox__Buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.BootstrapProfileBox__Buttons__Divider{
+    height: 20px;
+    flex: 1 0 0;
+}
+
+.CompleteProfileBox{
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    /*margin: 0;*/
+}
+
+.CompletedProfile__Item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 34px;
+    align-items: center;
+    margin: 0;
+}
+
+.CompletedProfile__Item_Label{
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.CompletedProfile__Item__Right{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0px;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    /*margin: 0;*/
+}
+
+.CompletedProfile__Item__Field{
+    display: flex;
+    padding: 4px 0px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    text-align: center;
+}
+
+.CompletedProfile__Item__ProfileDropdown{
+    flex: 1 0 0;
+}
+
+.CompletedProfile__Item__EditButton{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(188, 188, 188, 0); 
+    background-image: url(&apos;project://database/Assets/UnityDefaultRuntimeTheme.tss?fileID=-1304905567622442630&amp;guid=24252f1fdba660243bdd32bd42cee5f7&amp;type=3#arrow-down@2x&apos;); 
+    border-left-width: 0; 
+    border-right-width: 0; 
+    border-top-width: 0; 
+    border-bottom-width: 0; 
+}
+
+.CompleteProfileBox__Buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    padding-right: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 13.036px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.CompleteProfileBox__Buttons__Divider{
+    height: 20px;
+    flex: 1 0 0;
+}
+
+.CompletedProfile__Item__BootstrapButton{
+
+}

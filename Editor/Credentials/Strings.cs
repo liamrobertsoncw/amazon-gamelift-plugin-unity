@@ -130,13 +130,13 @@ namespace AmazonGameLift.Editor
         public const string SettingsUIDeployNextStepLabel = "SettingsUIDeployNextStepLabel";
         public const string LabelOpenSdkIntegrationDoc = "LabelOpenSdkIntegrationDoc";
         public const string LabelOpenSdkApiDoc = "LabelOpenSdkApiDoc";
-        
+
         public const string TabLanding = "TabLanding";
         public const string TabCredentials = "TabCredentials";
         public const string TabAnywhere = "TabAnywhere";
         public const string TabEC2 = "TabEC2";
         public const string TabHelp = "TabHelp";
-        
+
         public const string LabelAccountTitle = "LabelAccountTitle";
         public const string LabelAccountDescription = "LabelAccountDescription";
         public const string LabelAccountCardNoAccountTitle = "LabelAccountCardNoAccountTitle";
@@ -155,7 +155,7 @@ namespace AmazonGameLift.Editor
         public const string ButtonAccountNewProfileCreate = "ButtonAccountNewProfileCreate";
         public const string ButtonAccountNewProfileCancel = "ButtonAccountNewProfileCancel";
         public const string LabelAccountNewProfileHelpLink = "LabelAccountNewProfileHelpLink";
-        
+
         public const string LabelBootstrapTitle = "LabelBootstrapTitle";
         public const string LabelBootstrapDescription = "LabelBootstrapDescription";
         public const string LabelBootstrapPricing = "LabelBootstrapPricing";
@@ -171,7 +171,7 @@ namespace AmazonGameLift.Editor
         public const string LabelBootstrapWarning = "LabelBootstrapWarning";
         public const string LabelBootstrapProfilePlaceholder = "LabelBootstrapProfilePlaceholder";
         public const string ButtonBootstrapAnotherBucket = "ButtonBootstrapAnotherBucket";
-        
+
         public const string LabelBootstrapPopupWindowTitle = "LabelBootstrapPopupWindowTitle";
         public const string LabelBootstrapPopupTitle = "LabelBootstrapPopupTitle";
         public const string LabelBootstrapPopupDescription = "LabelBootstrapPopupDescription";
@@ -179,5 +179,15 @@ namespace AmazonGameLift.Editor
         public const string LabelBootstrapPopupFreeTierLink = "LabelBootstrapPopupFreeTierLink";
         public const string ButtonBootstrapPopupCancel = "ButtonBootstrapPopupCancel";
         public const string ButtonBootstrapPopupContinue = "ButtonBootstrapPopupContinue";
+
+        public const string LandingPageHeader = "LandingPageHeader";
+        public const string LandingPageDescription = "LandingPageDescription";
+        public const string LandingPageNoAccountCardText = "LandingPageNoAccountCardText";
+        public const string LandingPageNoAccountCardButton = "LandingPageNoAccountCardButton";
+        public const string LandingPageAccountCardText = "LandingPageAccountCardText";
+        public const string LandingPageAccountCardButton = "LandingPageAccountCardButton";
+        public const string LandingPageSampleHeader = "LandingPageSampleHeader";
+        public const string LandingPageSampleDescription = "LandingPageSampleDescription";
+        public const string LandingPageSampleButton = "LandingPageSampleButton";
     }
 }

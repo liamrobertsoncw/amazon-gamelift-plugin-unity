@@ -119,8 +119,8 @@ namespace Editor.Resources.EditorWindow
             RefreshProfiles();
             
             var contentContainer = _root.Q(className: "main__content").Children().First();
-            var landingPage = new LandingPage(contentContainer);
-            _userProfilesPage = new AwsUserProfilesPage(contentContainer,this);
+            var landingPage = new AwsUserProfilesPage(contentContainer, this);
+            /*_userProfilesPage = new AwsUserProfilesPage(contentContainer,this);*/
 
             _tabButtons = _root.Query<Button>(className: TabButtonClassName).ToList();
             _tabContent = _root.Query(className: TabContentClassName).ToList();
